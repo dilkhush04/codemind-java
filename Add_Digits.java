@@ -1,34 +1,29 @@
 import java.util.*;
-class AddDigit
+class Add
 {
     public static int add(int n)
     {
-        int temp=n;
-        int s=0;
-        while(temp!=0)
+        int sum=0;
+        while(n!=0)
         {
-           int  rem=temp%10;
-                s=s+rem;
-            temp=temp/10;
+             sum+=n%10;
+            n=n/10;
         }
-        return s;
+        return sum;
     }
     public static void main(String[] args)
-    {
+    {    
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         while(1>0)
         {
+            n=add(n);
             if(n<10)
             {
-                System.out.println(n);
-                break;
-                
-            }
-            else
-            {
-                n=add(n);
+            System.out.println(n);
+            break;
             }
         }
-    }
-}
+      //  System.out.println(n);
+    
+}   }
