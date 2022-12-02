@@ -1,5 +1,5 @@
 import java.util.*;
-class AmicableNumber
+class SumofGivenNumber
 {
     public static void main(String[] args)
     {
