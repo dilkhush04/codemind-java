@@ -1,42 +1,47 @@
 import java.util.*;
-class happyNumber
+class Fibonacci
 {
-    public static int happy(int n)
+    static int happy(int n)
     {
-        int num=n,sum=0;
-        while(num!=0)
+        int s=0;
+        while(n!=0)
         {
-            int rem=num%10;
-            sum=sum+rem*rem;
-            num/=10;
+            int rem=n%10;
+            s=s+rem*rem;
+            n/=10;
         }
-        return sum;
+        return s;
     }
+   
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
+        n=happy(n);
         while(1>0)
-          { if(happy(n)<10)
-           {
-               if(happy(n)==1 || happy(n)==7)
-               {
-                   System.out.println("True");
-                   break;
-               }
-               else
-               {
-                   System.out.println("False");
-                   break;
-               }
-           }
-           else
-           {
+        {
+            if(n<10)
+            {
+                if(n==1 || n==7)
+                {
+                    System.out.println("True");
+                    break;
+                }
+                else
+                {
+                    System.out.println("False");
+                    break;
+                }
+            }
+            else
+            {
                n=happy(n);
-           }
+            }
+           
             
-          }
         }
+        
+    }
         
        
     }
