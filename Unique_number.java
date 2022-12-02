@@ -1,25 +1,22 @@
 import java.util.*;
-class AmicableNumber
+class UniqueNUmber
 {
-    public static void main(String[] args)
+     void uniqe(int n)
     {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int i=0;
         int[] a=new int[100];
+        int c=0;
+        int i,j;
         while(n!=0)
         {
-            int rem=n%10;
-            a[i++]=rem;
-            n=n/10;
+            a[c++]=n%10;
+            n/=10;
         }
         int flag=0;
-        for(int k=0;k<i;k++)
+        for(i=0;i<c;i++)
         {
-            //System.out.println(a[k]);
-            for(int j=k+1;j<i;j++)
+            for(j=i+1;j<c;j++)
             {
-                if(a[k]==a[j])
+                if(a[i]==a[j])
                 {
                     flag=1;
                     break;
@@ -34,5 +31,15 @@ class AmicableNumber
         {
             System.out.println("Not Unique Number");
         }
+        
+    }
+        
+    
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        UniqueNUmber obj=new UniqueNUmber();
+        obj.uniqe(n);
     }
 }
