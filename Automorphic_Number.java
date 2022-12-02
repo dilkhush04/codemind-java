@@ -1,26 +1,31 @@
 import java.util.*;
-class Test {
-    // Function to check Automorphic number
-    static boolean isAutomorphic(int N)
+class AutomorphicNumber
+{
+    public static int num(int n)
     {
-        int sq = N * N;
-        while (N > 0) {
-         
-            if (N % 10 != sq % 10)
-                return false;
-            N /= 10;
-            sq /= 10;
+        int rev=0;
+        while(n!=0)
+        {
+            rev++;
+            n/=10;
         }
- 
-        return true;
+        return rev;
     }
- 
-    // Driver method
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
-        int N=sc.nextInt();
- 
-        System.out.println(isAutomorphic(N) ? "Automorphic Number" : "Not an Automorphic Number");
+        int n=sc.nextInt();
+        int m=n*n;
+        if(n==m%Math.pow(10,num(n)))
+        {
+            System.out.println("Automorphic Number");
+            
+        }
+        else
+        {
+            System.out.println("Not an Automorphic Number");
+        }
+       
+        
     }
 }
