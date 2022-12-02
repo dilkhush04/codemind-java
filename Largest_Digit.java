@@ -1,25 +1,22 @@
 import java.util.*;
-class UglyNumber
+class LargestDigit
 {
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
-        long  n=sc.nextLong();
-        long temp=-999;
-        int c=0;
+        int  n=sc.nextInt();
+        int temp=-999;
         while(n!=0)
         {
-           long rem=n%10;
+           int rem=n%10;
            if(temp<rem)
            {
                temp=rem;
            }
-            n=n/10;
-            
+           n/=10;
         }
         
-            System.out.println(temp);
-        
+        System.out.println(temp);
        
     }
 }
