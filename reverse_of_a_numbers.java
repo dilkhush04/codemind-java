@@ -1,22 +1,18 @@
 import java.util.*;
-class Reverse
+class ReverseNumber
 {
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
-        long  n=sc.nextLong();
+        int  n=sc.nextInt();
         int c=0;
-        long rev=0;
         while(n!=0)
         {
-            long rem=n%10;
-            rev=rev*10+rem;
-            n/=10;
-            
-            
+             c=c*10+n%10;
+             n/=10;
         }
         
-            System.out.println(rev);
+        System.out.println(c);
         
        
     }
