@@ -1,20 +1,25 @@
 import java.util.*;
-class Gcd
+class GCD
 {
+   
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int m=sc.nextInt();
-        int test=m>n?m:n;
+        int x=n<m?n:m;
         while(1>0)
         {
-            if(m%test==0 && n%test==0)
+            if(n%x==0 && m%x==0)
             {
-                System.out.println(test);
+                System.out.println(x);
                 break;
             }
-            test--;
+            x--;
+            
         }
+        
     }
-}
+        
+       
+    }
