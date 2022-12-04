@@ -1,5 +1,5 @@
 import java.util.*;
-class ElementAndCoun
+class NtimesRepeat
 {
     public static void main(String[] args)
     {
