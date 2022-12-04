@@ -1,5 +1,5 @@
 import java.util.*;
-class CountElement11
+class CountElement1
 {
     public static void main(String[] args)
     {
@@ -64,10 +64,10 @@ class CountElement11
              {
                   c++;
              }
-            
         }
-         
-        System.out.print(c);
+        
+        System.out.println(c);
+        
         
     }
 }
