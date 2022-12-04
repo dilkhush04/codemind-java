@@ -62,11 +62,8 @@ class CountElement11
              }
              if(flag==0)
              {
-                 
-                  arr3[c]=arr1[i];
-                  c++;
+                  arr3[p++]=arr1[i];
              }
-            
         }
          for(i=0;i<b;i++)
         {
@@ -80,15 +77,13 @@ class CountElement11
              }
              if(flag==0)
              {
-                 arr3[c]=arr2[i];
-                  c++;
+                  arr3[p++]=arr2[i];
              }
         }
-        for(i=0;i<c;i++)
+        for(i=0;i<p;i++)
         {
             System.out.print(arr3[i]+" ");
         }
-        
         
     }
 }
