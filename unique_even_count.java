@@ -1,15 +1,18 @@
 import java.util.*;
-class UniqueEvensum
+class UniqueEvencount
 {
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
+        int m=n;
         int[] a=new int[n];
-        int i,j,k,sum=0;
+        int[] b=new int[n];
+        int i,j,k,c=0;
         for(i=0;i<n;i++)
         {
             a[i]=sc.nextInt();
+            b[i]=a[i];
         }
         for(i=0;i<n;i++)
         {
@@ -29,11 +32,14 @@ class UniqueEvensum
         }
         for(i=0;i<n;i++)
         {
-           if(a[i]%2==0)
-           {
-               sum++;
-           }
+           
+                if(a[i]%2==0)
+                {
+                    c++;
+                }
+          
+            
         }
-        System.out.println(sum);
+        System.out.println(c);
     }
 }
