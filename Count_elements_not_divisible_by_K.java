@@ -1,21 +1,25 @@
-import java.util.*;
-class CounElementNotDivisibleByK
+import java.util.Scanner;  
+class CountElementNotDidv_k   
+{  
+public static void main(String[] args)   
 {
-    public static void main(String[] args)
-    {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int k=sc.nextInt();
-        int[] a=new int[n];
-        int c=0;
-        for(int i=0;i<n;i++)
-        {
-            a[i]=sc.nextInt();
-            if(a[i]%k!=0)
+    int n;
+    int c=0;
+    Scanner sc=new Scanner(System.in);  
+    n=sc.nextInt();
+    int k=sc.nextInt();
+    int[] array = new int[n];
+    for(int i=0; i<n; i++)  
+        {  
+            array[i]=sc.nextInt();  
+        }  
+    for (int i=0; i<n; i++)   
+    {  
+        if(array[i]%k!=0)
             {
                 c++;
             }
-        }
-        System.out.println(c);
-    }
+    } 
+    System.out.println(c); 
+    }  
 }
