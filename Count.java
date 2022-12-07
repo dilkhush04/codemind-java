@@ -1,5 +1,5 @@
 import java.util.*;
-class SumOfperfactQuare
+class count
 {
     public static void main(String[] args)
     {
