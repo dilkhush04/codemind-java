@@ -1,5 +1,5 @@
 import java.util.*;
-class DisariumNumber
+class Abundan_number
 {
     public static void main(String[] args)
     {
